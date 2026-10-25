@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Shooter Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <h1>🚀 SPACE SHOOTER</h1>
+      <p>Defend the galaxy!</p>
+    </header>
+
+    <section class="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Lives: <span id="lives">3</span></div>
+    </section>
+
+    <div class="game-area">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h2 id="message">Ready for Battle?</h2>
+        <p id="instructions">
+          Move: Arrow Keys / WASD<br>
+          Shoot: Spacebar<br>
+          Mobile: Use the buttons below
+        </p>
+        <button id="startBtn">START GAME</button>
+      </div>
+    </div>
+
+    <div class="mobile-controls">
+      <button data-key="ArrowLeft">◀</button>
+      <button data-key="ArrowUp">▲</button>
+      <button data-key="ArrowDown">▼</button>
+      <button data-key="ArrowRight">▶</button>
+      <button id="fireBtn">🔥 FIRE</button>
+    </div>
+
+    <p class="footer">Destroy enemies. Protect your ship. Save the galaxy!</p>
+  </main>
+
+  <script src="scrpit.js"></script>
+</body>
+</html>
