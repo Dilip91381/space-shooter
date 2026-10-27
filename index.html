@@ -4,32 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Shooter Game</title>
+  <title>NEBULA RUN — Space Shooter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="game-container">
     <header>
-      <h1>🚀 SPACE SHOOTER</h1>
-      <p>Defend the galaxy!</p>
+      <p class="eyebrow">THE GALAXY NEEDS YOU</p>
+      <h1>NEBULA <span>RUN</span></h1>
+      <p>Survive the swarm. Become a legend.</p>
     </header>
 
     <section class="stats">
-      <div>Score: <span id="score">0</span></div>
-      <div>Lives: <span id="lives">3</span></div>
+      <div class="stat"><span class="stat-label">SCORE</span><strong id="score">0</strong></div>
+      <div class="stat"><span class="stat-label">WAVE</span><strong id="wave">1</strong></div>
+      <div class="stat"><span class="stat-label">LIVES</span><strong id="lives">3</strong></div>
+      <div class="stat"><span class="stat-label">BEST</span><strong id="best">0</strong></div>
     </section>
 
     <div class="game-area">
       <canvas id="gameCanvas" width="800" height="600"></canvas>
 
       <div id="overlay" class="overlay">
+        <div class="overlay-icon">✦</div>
+        <p class="eyebrow">PILOT, YOUR SHIP IS READY</p>
         <h2 id="message">Ready for Battle?</h2>
         <p id="instructions">
-          Move: Arrow Keys / WASD<br>
-          Shoot: Spacebar<br>
-          Mobile: Use the buttons below
+          Arrow keys / WASD to fly · Space to fire<br>
+          Collect ✦ rapid fire and ♥ extra lives
         </p>
-        <button id="startBtn">START GAME</button>
+        <button id="startBtn">LAUNCH MISSION <span>↗</span></button>
       </div>
     </div>
 
