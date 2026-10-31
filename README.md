@@ -24,7 +24,7 @@ space-shooter/
 ├── style.css
 ├── script.js
 └── README.md
-```
+
 
 *Note: The CSS and JavaScript filenames may differ depending on your project.*
 
